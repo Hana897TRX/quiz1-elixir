@@ -5,27 +5,27 @@ defmodule Numbers do
   @intro "Why is the number six so scared? Because seven eight nine!\nWe should get to know numbers a bit more!"
 
   koan "Is an integer equal to its float equivalent?" do
-    assert 1 == 1.0 == ___
+    assert 1 == 1.0 == true
   end
 
   koan "Is an integer threequal to its float equivalent?" do
-    assert 1 === 1.0 == ___
+    assert 1 === 1.0 == false
   end
 
   koan "Revisit division with threequal" do
-    assert 2 / 2 === ___
+    assert 2 / 2 === 1.0
   end
 
   koan "Another way to divide" do
-    assert div(5, 2) == ___
+    assert div(5, 2) == 2
   end
 
   koan "What remains or: The Case of the Missing Modulo Operator (%)" do
-    assert rem(5, 2) == ___
+    assert rem(5, 2) == 1
   end
 
   koan "Other math operators may produce this" do
-    assert 2 * 2 === ___
+    assert 2 * 2 === 4
   end
 
   koan "Or other math operators may produce this" do
